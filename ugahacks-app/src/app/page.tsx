@@ -2,27 +2,20 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';  // Correct imports
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
-    <Router>
+    <div>
       <div className="flex justify-center">
-        <nav>
-          <Link to="/"> Home</Link>  {/* Link component */}
-          <Link to="/page1"> Page 1</Link>
-        </nav>
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/page1" element={<Page1 />} />
-      </Routes>
-    </Router>
+    </div>
   );
 }
 
-function Page1() {
-  return <div>Page 1 Content</div>;
-}
+// function Page1() {
+//   return <div>Page 1 Content</div>;
+// }
 
 function Home() {
   return (
